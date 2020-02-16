@@ -1,0 +1,33 @@
+  create database IA_1;
+  USE IA_1;
+
+  DROP TABLE IF EXISTS IA_1.teacher;
+	FLUSH TABLES;
+    CREATE TABLE IA_1.teacher (
+    TeacherID int(255) auto_increment primary key,
+    LastName varchar(255),
+    FirstName varchar(255),
+    Subject varchar(255)
+    );
+    
+    
+	DROP TABLE IF EXISTS IA_1.current_allocations;
+  CREATE	TABLE IA_1.current_allocations (
+    DutyTimeID int(255) auto_increment primary key,
+    TeacherID int(255),
+    Duty_Date_Start date,
+    Duty_Date_End date
+    );
+    
+    
+  DROP TABLE IF EXISTS IA_1.users;
+	CREATE	TABLE IA_1.users (
+    UserID int(255) auto_increment primary key,
+    Username varchar(255),
+    Email varchar(255),
+    Password varchar(255)
+    );
+    
+alter table IA_1.current_allocations
+add foreign key (TeacherID) references IA_1.teacher(TeacherID);
+
