@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Internal-Assessment.iml" filepath="$PROJECT_DIR$/Internal-Assessment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Internal-Assessment_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Internal-Assessment_main.iml" group="Internal-Assessment" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Internal-Assessment_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Internal-Assessment_test.iml" group="Internal-Assessment" />
+    </modules>
+  </component>
+</project>
